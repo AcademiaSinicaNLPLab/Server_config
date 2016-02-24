@@ -1,7 +1,7 @@
 #Server system
 Ubuntu 12&14
 
-##LDAP
+#LDAP
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-authenticate-client-computers-using-ldap-on-an-ubuntu-12-04-vps)
 1. Install LDAP client
 ```bash
@@ -37,7 +37,8 @@ $ vim /etc/sudoers (Permission configuration)
 $ vim /etc/ldap.conf
 nss_override_attribute_value loginShell /usr/bin/zsh
 ```
-## NFS
+ 
+# NFS
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-12-04)
 
 1. Install NFS
