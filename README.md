@@ -1,4 +1,4 @@
 Server Config
 =======
 
-Instructions on how to configure NLP lab server
+This is the Wiki for the [NLPlab](http://academiasinicanlplab.github.io/)@sinica.

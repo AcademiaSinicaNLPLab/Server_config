@@ -1,4 +1,5 @@
 # Summary
 
 * [Preface](README.md)
-* [Instruction](instruction.md)
+* [Server Config](server_config.md)
+* [Github Repos](github_repos.md)
