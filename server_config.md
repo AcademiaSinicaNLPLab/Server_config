@@ -52,3 +52,9 @@ $ vim /etc/fstab
 $ mount -a
 ```
 
+# Web Service (nginx)
+1. directory: doraemon -> /etc/nginx/sites-enabled
+2. need root or sudoer to change the configure file and restart the nigix service
+3. restart command
+   $ service nginx restart
+
