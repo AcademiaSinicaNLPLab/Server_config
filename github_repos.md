@@ -1,5 +1,10 @@
 # Corpus
-* [Sentiment Dataset](https://github.com/AcademiaSinicaNLPLab/sentiment_dataset)
+* [sentiment_dataset](https://github.com/AcademiaSinicaNLPLab/sentiment_dataset)
+* sentiment_dataset_non_public
+* ChineseNews_LDC2009T14
+* wordvector/
+  * globve
+  * [word2vec](https://github.com/AcademiaSinicaNLPLab/word2vec)
 
 # Tools
-* [Word2vec Python Interface](https://github.com/AcademiaSinicaNLPLab/word2vec_gensim)
+* stanford-tools
