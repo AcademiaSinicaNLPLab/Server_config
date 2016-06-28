@@ -1,6 +1,26 @@
 #Server system
 Ubuntu 12&14
 
+# NFS
+[Reference](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-12-04)
+
+1. Install NFS
+```bash
+$ sudo apt-get install nfs-common portmap
+```
+2. configure
+```bash
+$ mkdir /corpus /tools
+$ vim /etc/fstab and add the following lines:
+# mount /corpus from PEKKA
+pekka.iis.sinica.edu.tw:/volume1/corpus     /corpus         nfs     defaults,auto   0    0
+# mount /home from PEKKA
+pekka.iis.sinica.edu.tw:/volume1/tempHome       /home        nfs     defaults,auto   0    0
+# mount /tools from PEKKA
+pekka.iis.sinica.edu.tw:/volume1/tools      /tools          nfs     defaults,auto   0    0
+$ mount -a
+```
+
 #LDAP
 [Reference](https://www.digitalocean.com/community/tutorials/how-to-authenticate-client-computers-using-ldap-on-an-ubuntu-12-04-vps)
 1. Install LDAP client
@@ -37,20 +57,24 @@ $ vim /etc/sudoers (Permission configuration)
 $ vim /etc/ldap.conf
 nss_override_attribute_value loginShell /usr/bin/zsh
 ```
- 
-# NFS
-[Reference](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-12-04)
 
-1. Install NFS
+5. Setting up User's home directory template
 ```bash
-$ sudo apt-get install nfs-common portmap
+$ mkdir /home/TEMPLATE
+# Add some configure file such as .zshrc in /home/TEMPLATE
+$ cd /etc/pamd.d/
+$ vim common-session
+# Ceate a home directory if not exists
+session required    pam_mkhomedir.so skel=/home/TEMPLATE umask=0022
+$ vim sshd
+# Ceate a home directory if not exists
+session required    pam_mkhomedir.so skel=/home/TEMPLATE umask=0022
 ```
-2. configure
-```bash
-$ mkdir /tempHome, /corpus /tools
-$ vim /etc/fstab
-$ mount -a
-```
+
+# Add Account
+1. login pekka (http://pekka.iis.sinica.edu.tw:5000/webman/index.cgi )
+2. select main menu -> Directory Server -> User -> Add
+3. group: Users (general user) / administrator (sudo)
 
 # Web Service (nginx)
 1. directory: doraemon -> /etc/nginx/sites-enabled
@@ -58,7 +82,3 @@ $ mount -a
 3. restart command
    $ service nginx restart
 
-# Add Account
-1. login pekka (http://pekka.iis.sinica.edu.tw:5000/webman/index.cgi )
-2. select main menu -> Directory Server -> User -> Add
-3. group: Users (general user) / administrator (sudo)
