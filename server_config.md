@@ -58,3 +58,7 @@ $ mount -a
 3. restart command
    $ service nginx restart
 
+# Add Account
+1. login pekka (http://pekka.iis.sinica.edu.tw:5000/webman/index.cgi )
+2. select main menu -> Directory Server -> User -> Add
+3. group: Users (general user) / administrator (sudo)
