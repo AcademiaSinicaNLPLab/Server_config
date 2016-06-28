@@ -2,4 +2,5 @@
 
 * [Preface](README.md)
 * [Server Config](server_config.md)
-* [Github Repos](github_repos.md)
+* [Corpus & Tools](github_repos.md)
+
