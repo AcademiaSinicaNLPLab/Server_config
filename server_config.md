@@ -52,7 +52,7 @@ $ vim /etc/sudoers (Permission configuration)
  %administrators ALL=(ALL) ALL
 ```
 
-4. Integration with ZH
+4. Integration with ZSH
 ```bash
 $ vim /etc/ldap.conf
 nss_override_attribute_value loginShell /usr/bin/zsh
