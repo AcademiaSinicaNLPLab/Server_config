@@ -73,8 +73,11 @@ session required    pam_mkhomedir.so skel=/home/TEMPLATE umask=0022
 
 # Add Account
 1. login pekka (http://pekka.iis.sinica.edu.tw:5000/webman/index.cgi )
+![](useradd1.png)
+
 2. select main menu -> Directory Server -> User -> Add
 3. group: Users (general user) / administrator (sudo)
+
 
 # Web Service (nginx)
 1. directory: doraemon -> /etc/nginx/sites-enabled
