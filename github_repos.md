@@ -7,4 +7,5 @@
   * [word2vec](https://github.com/AcademiaSinicaNLPLab/word2vec)
 
 # Tools
-* stanford-tools
+* stanford-tools - English/Simplified Chinese parser
+* CKIP - Chinese word segmenter
