@@ -86,7 +86,7 @@ $ vim /etc/pam.d/sesman
 $ sudo add-apt-repository ppa:ravefinity-project/ppa
 $ sudo apt-get update
 $ sudo apt-get install ambiance-flat-colors radiance-flat-colors
-
+```
 
 # Add Account
 1. login pekka (http://pekka.iis.sinica.edu.tw:5000/webman/index.cgi )
