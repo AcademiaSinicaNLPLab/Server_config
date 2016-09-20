@@ -4,5 +4,5 @@
 * [Server Config](server_config.md)
 * [Corpus & Tools](github_repos.md)
 * [web service](web_service.md)
-* service
+* [service](service.md)
 
