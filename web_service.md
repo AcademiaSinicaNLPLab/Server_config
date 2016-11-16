@@ -17,9 +17,9 @@ $ python3 demo_server.py
 url: http://givemeexample.com/GiveMeExample
 
 ### RESOLVE
-####note: on doraemon
+note: on doraemon
 ```bash
-$ cd /home/frankle/Documents/developspace/WordNetKWNL
+$ cd /home/frankle/Documents/developspace/WordNetJWNL
 $ ./resolve_server.sh
 ```
 url: http://resolve.iis.sinica.edu.tw
