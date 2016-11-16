@@ -16,6 +16,14 @@ $ python3 demo_server.py
 ```
 url: http://givemeexample.com/GiveMeExample
 
+### RESOLVE
+####note: on doraemon
+```bash
+$ cd /home/frankle/Documents/developspace/WordNetKWNL
+$ ./resolve_server.sh
+```
+url: http://resolve.iis.sinica.edu.tw
+
 ### facebooklabel
 ```bash
 $ cd /home/rc/AS/mysite
