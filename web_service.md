@@ -24,6 +24,13 @@ $ ./resolve_server.sh
 ```
 url: http://resolve.iis.sinica.edu.tw
 
+### WordForce
+```bash
+$ cd /home/penguin/workspace/flask
+$ python wev_server.py
+```
+url: http://doraemon.iis.sinica.edu.tw/wordforce
+
 ### facebooklabel
 ```bash
 $ cd /home/rc/AS/mysite
