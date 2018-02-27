@@ -88,6 +88,9 @@ $ sudo apt-get update
 $ sudo apt-get install ambiance-flat-colors radiance-flat-colors
 ```
 
+# OpenSSL
+read NOTE.UNIX in openssl folder
+
 # Add Account
 1. login pekka (http://pekka.iis.sinica.edu.tw:5000/webman/index.cgi )
 ![](useradd1.png)
