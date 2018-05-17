@@ -1,4 +1,5 @@
-### Connections
+Connections
+```
 $ ssh-agent
 $ ssh -T git@github.com
 $ ssh wkchung@abigail.iis.sinica.edu.tw
@@ -36,7 +37,9 @@ $ git branch <new_branch>:        construct a new branch.
 $ git checkout <branch>:      switch from current branch to target branch.
 $ git pull
 $ git push
-### Tmux command
+```
+Tmux command
+```
 prefix key for tmux: Ctrl + a 
 $ tmux                                              start new session
 $ tmux new -s <name>                                  the current screen starts to be supervised by tmux (new tmux session with a name)
@@ -58,7 +61,9 @@ $ prefix + p                                        switch to previous window.
 $ prefix + n                                        switch to next window.
 $ prefix + :                                        tmux command prompt mode.
 : move-window -s <src w no.> -t <tar w no.>         move window from a number to another number.
-### Pip (or Pip3 for Python3.x) command
+```
+Pip (or Pip3 for Python3.x) command
+```
 $ pip3 -v                                           show the current version of pip
 $ pip3 -h (help)                                    show pip commands
 $ pip3 install [options] <package>                    install package
@@ -74,10 +79,13 @@ $ pip3 show [options] <package>                       show datail information of
 $ pip3 show --files [options] <package>               show the installation directory of the package
 $ pip3 search [options] <package>                 search target package
 # Python site-packages are here: C:\Users\rreal\AppData\Local\Programs\Python\Python36\Lib\site-packages #
-### Other useful command
+```
+Other useful command
+```
 $ unzip <file.zip> (-d <target_directory> )         extract .zip file under current directory, or target directory is specified
 $ nvidia-smi                                        supervice GPU status statically.
 $ watch nvidia-smi                                  supervice GPU status dynamically.
 $ CUDA_VISIBLE_DEVICE=<1,2>   <python3.6> <filename>  use particular GPU device to run the programm
 $ Ctrl + b + d                                      close current window and ternimate tasks
 $ Ctrl + q + c                                      exit current running command 
+```
